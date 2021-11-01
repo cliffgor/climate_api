@@ -20,7 +20,13 @@ const newspapers = [
         name:'nationafrica',
         address:'https://nation.africa',
         base:'https://nation.africa'
-    }
+    },
+    {
+        name:'bbc',
+        address:'https://www.bbc.com',
+        base:'https://www.bbc.com'
+    },
+    
 ]
 
 const articles = []
@@ -57,7 +63,7 @@ app.get('/news/:newspaperId', async (req, res) => {
   const newspaperId = req.params.newspaperId
   const newspaperAddress = newspapers.filter(newspaper => newspaper.name == newspaperId)[0].address
   const newspaperBase = newspapers.filter(newspaper => newspaper.name == newspaperId)[0].base
-        //console.log(newspaperAddress);
+        
   axios.get(newspaperAddress)
     .then(response => {
         const html = response.data
