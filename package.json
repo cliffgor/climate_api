@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "ISC",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "author": "Cliff Gor",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.10"
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
   }
 }
