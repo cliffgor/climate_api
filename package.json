@@ -2,5 +2,9 @@
   "name": "climate_api",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "ISC",
+  "author": "Cliff Gor",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10"
+  }
 }
